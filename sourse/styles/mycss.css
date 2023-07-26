@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Ysabeau Office&display=swap');
+
+body {
+    font-family: Ysabeau Office,serif;
+    font-weight:900;
+    font-size: large;
+    /* text-shadow: 5px 5px 10px #b300ff; */
+
+    background: linear-gradient(90deg, #950353 0%, #453131 100%);
+}
+p {
+    color:aquamarine;
+}
+
+/* вторая кнопка */
+.nav-link {
+    color: chartreuse;
+}
+/* главная кнопка */
+.navbar-nav .nav-link.active {
+    color: deeppink;
+}
+
+/* картинка, тип логотип */
+.navbar-brand img {
+    height: 45px;
+}
+
+/* бургер */
+.navbar-toggler {
+    background-color: rgb(7, 255, 255);
+
+}
+/* карточки товаров */
+.card {
+    box-shadow: 5px 5px 13px 2px #00c1c5bd;
+    color:aquamarine;
+    background: linear-gradient(270deg, #d10173 0%, #453131 100%);
+}
+/* правая навигационная
+    панель */
+.side-bar {
+    color:aquamarine;
+    background: linear-gradient(270deg, #d10173 0%, #453131 100%);
+
+}
+/* главный контейнер */
+section,
+footer {
+    text-shadow: 5px 5px 10px #0004ff;
+
+}
+/* карточка ссылка */
+.card a {
+    text-decoration: none;
+    color:aquamarine;
+}
+/* кнопка купить на 
+   сайте товаров */
+.btn.btn-primary{
+    color: aliceblue;
+    background-color: lime;
+}
+/* карта товаров на
+   главной странице */
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+.btn-outline-danger {
+    color: rgb(0, 255, 251);
+}
+footer {
+    background: linear-gradient(270deg, #147b09 0%, #056857 100%);
+}
+/* нижняя панель с тг и ют */
+.media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-anim {
+    animation: call-anim 2s ease 0s infinite normal forwards;
+}
+/* обращение к нашей кнопки анимации */
+@keyframes call-anim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+.btn-outline-warning {
+    animation: warning 2s ease 0s infinite normal forwards;
+    background: linear-gradient(270deg, #808900 0%, #042ab1 100%);
+}
+@keyframes warning {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+.tg-link {
+    animation: tganim 2s ease 0s infinite normal forwards;
+}
+@keyframes tganim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
