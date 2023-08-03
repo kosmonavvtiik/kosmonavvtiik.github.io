@@ -29,8 +29,12 @@
 .video-text {
     color: #FF00AA;
     z-index: 2;
-
-
     /* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
 }
 /* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
+.video-text h2 {
+    color: aquamarine;
+    /* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
+
+
+}

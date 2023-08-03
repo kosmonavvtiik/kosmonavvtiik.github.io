@@ -23,7 +23,7 @@ p {
 
 /* картинка, тип логотип */
 .navbar-brand img {
-    height: 45px;
+    height: 60px;
 }
 
 /* бургер */
@@ -51,7 +51,10 @@ footer {
 
 }
 /* карточка ссылка */
-.card a {
+.card a,
+.footer-text a,
+.email>p>a,
+.call>p>a {
     text-decoration: none;
     color:aquamarine;
 }
@@ -197,4 +200,8 @@ footer {
 		opacity: 1;
 		transform: translateY(0px);
 	}
+}
+.ooo {
+	padding-top: 10px;
+	font-size: x-large;
 }
