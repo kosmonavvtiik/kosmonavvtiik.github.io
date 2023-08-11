@@ -1,0 +1,40 @@
+.bgvideo {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgvideo video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.effect {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.307);
+}
+.video-text {
+    color: #FF00AA;
+    z-index: 2;
+    /* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
+}
+/* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
+.video-text h2 {
+    color: aquamarine;
+    /* background: linear-gradient(90deg, #FF16FA 3%, #00FFC7 89%); */
+
+
+}
