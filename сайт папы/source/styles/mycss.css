@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Ysabeau Office&display=swap');
+
+body {
+    font-family: Ysabeau Office,serif;
+    font-weight:900;
+    font-size: large;
+    background: linear-gradient(90deg, #007667 0%, #4b0080 39%, #940141 100%);
+}
+
+p {
+    font-size:large;
+    color: #00e1ff;
+}
+
+footer {
+    background: linear-gradient(170deg, #00FFDC 0%, #9600FF 39%, #FF006E 100%);
+}
+footer p {
+    font-weight: bold;
+}
+
+/* посредственные кнопки */
+.nav-link {
+    color: rgb(238, 0, 255);
+    font-size: x-large;
+}
+/* кнопка нав.панели */
+.navbar-toggler {
+    background-color: #9600FF;
+}
+
+/* инф.панели справа
+на странице товаров 
+и на главной странице */
+.side-bar {
+    background: linear-gradient(40deg, #017d6d 0%, #4d0184 39%, #be0053 100%);
+
+}
+
+/* ссылки на что-то */
+.footer-text a,
+.email a,
+.phone a {
+    text-decoration: none;
+    color: #00e1ff;
+}
+.side-bar a {
+    text-decoration: none;
+    color: #FF006E;
+}
+
+/* главные кнопки сайта */
+.nav-item .nav-link.active {
+    color: rgb(0, 217, 255); 
+    font-size: x-large;
+
+}
+/* неработающая кнопка */
+.nav-link.disabled {
+    color: darkgray;
+    font-size: x-large;
+}
+/* логотип компании */
+.navbar-brand img {
+    width: 70px;
+}
+/* имя компании */
+.ooo {
+    color: rgb(0, 255, 21);
+    padding-top: 15px;
+    font-size: xx-large;
+    font-weight:500;    
+}
+/* текст нижнего подвала
+и текст карусели */
+.footer-text,
+.slide-text {
+    margin: auto auto;
+}
+.slide-text{
+    padding-right: 100px ;
+}
+/* подвал на старнице контактов */
+.fot-cont {
+    margin-top: 72px;
+}
+/* текст на страницу контактов */
+.adres p {
+    font-size: x-large;
+}
+
+@media (max-width:755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.btn {
+    font-size: larger;
+    font-weight:bold;
+}
+
+/* анимация кнопки звонка */
+.call-anim {
+    width: 40px;
+    animation: call 2s ease 0s infinite normal forwards;
+}
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
