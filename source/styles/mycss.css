@@ -6,7 +6,9 @@ body {
     font-size: large;
     background: linear-gradient(90deg, #007667 0%, #4b0080 39%, #940141 100%);
 }
-
+summary{
+    color: #e9bdff  ;
+}
 p {
     font-size:large;
     color: #00e1ff;
@@ -94,6 +96,9 @@ footer p {
     .carousel-indicators {
         display: none;
     }
+    /* .korzina {
+
+    } */
 }
 
 .btn {
@@ -132,4 +137,10 @@ footer p {
 	75% {
 		transform: translateX(-6px) rotate(-1.2deg);
 	}
+}
+.card {
+    background-color:#231c1c ;
+}
+.card-title {
+    color: #00e1ff;
 }
