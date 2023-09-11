@@ -1,0 +1,271 @@
+/*? карточки товара */
+.card {
+	transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+  }
+.card:hover {
+    background-color: #0e0d0d;
+    transform: scale(0.98);
+    opacity: 0.9;
+    /* filter: brightness(80%); */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(240, 87, 37, 0.5);
+}
+  
+.card {
+    background-color:#231c1c ;
+}
+.card-title {
+    color: #00e1ff;
+}
+.card-body:hover {
+	background-color: #1a1717;
+}
+/* ? карточки товара  */
+
+
+
+/* ! кнопки + и - */
+.details-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.smart-basket__remove-item {
+    background-color: #ff0606;
+    color: #56ff01;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* opacity: 0; */
+    transition: opacity 0.3s ease;
+  }
+  
+  .smart-basket__remove-item:hover {
+    /* opacity: 1; */
+    background-color: #006c6a;
+    color: #ff00dd;
+  }
+  
+
+.smart-basket__add-item,
+.smart-basket__remove-item {
+    background-color: #ccc;
+    color: #f20707;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+  }
+  
+  .smart-basket__add-item:hover {
+    background-color: #006c6a;
+    color: #4dff00;
+  }
+  
+.product__quantity {
+	font-family: 'Merriweather', serif;
+	background: #f2ede7;
+	border-radius: 8px;
+	width: 120px;
+	display: flex;
+	margin-top: 10px;
+    margin-bottom: 15px;
+	font-size: 18px;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+}
+ /* ! кнопки + и - */
+
+ .price {
+	text-align: left;
+	margin-left: 15px;
+}
+
+.price__weight {
+  display: flex;
+  justify-content: center;
+	/* color: #6c757d!important; */
+	color: #ff00dd;
+	font-size: 80%;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+.price__currency {
+	/* font-size: 1.5rem; */
+	font-size:20px;
+	color: chartreuse;
+	font-weight: 600;
+	line-height: 1;
+}
+/* ?корзина с товарами */
+.cart>svg {
+  width: 60px;
+  height: 45px;
+  padding-right: 15px;
+
+}
+
+.cart {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  color: #00FFDC;
+  background-color: rgb(33, 37, 41);
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 50px;
+  height: 50px;
+}
+
+.cart:hover {
+  background-color: rgb(33, 37, 41);
+      transform: scale(0.96);
+}
+
+.cart .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 7px 10px;
+    background-color: red;
+    color: rgba(255, 255, 255, 0);
+    font-size: 12px;
+    border-radius: 50%;
+    animation: none;
+  }
+  
+  .cart:hover .badge {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1.5);
+    }
+  
+    50% {
+      transform: scale(2);
+    }
+  
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  
+/* ?корзина с товарами */
+  
+
+
+
+.item-count {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: red;
+	color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	cursor: default;
+	animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.2);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+.cont-bt {
+    display: flex;
+    justify-content:center;
+}
+
+  
+
+
+.size-button {
+    color: #ffffff;
+    cursor: pointer;
+    border: 2px solid;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 15px;
+    /* margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px; */
+    border-color: chartreuse;
+    border-radius: 20px;
+  }
+  
+.size-button:hover {
+    border-color: red;
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes buttonAnimation {
+    0% {
+      border-color: blue;
+      background-color: linear-gradient(to right, blue, pink, blue);
+    }
+    50% {
+      border-color: pink;
+      background-color: linear-gradient(to right, pink, blue, pink);
+    }
+    100% {
+      border-color: rgb(0, 251, 255);
+      background-color: linear-gradient(to right, blue, pink, blue);
+    }
+  }
+  
+  .card {
+    background-color:#231c1c ;
+}
+.card-title {
+    color: #00e1ff;
+}
+
+.smart-basket__min-count {
+    position: absolute;
+    margin-top: -32px;
+    margin-left: 11px;
+}
+
+.badge {
+    color: #56ff0100;
+}
+
+
+.smart-basket__min {
+    background-color: #56ff0100;
+    position: absolute;
+    color: #fdfdfd;
+    width: 54px;
+    height: 50px;
+    border: none;
+    display: non;
+    margin-top: -55px;
+    margin-left: -12px;
+}
+
+
