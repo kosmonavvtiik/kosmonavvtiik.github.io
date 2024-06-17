@@ -24,7 +24,8 @@
     left: 0;
     object-fit: cover;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.307);
+    background-color: rgba(0, 0, 0, 0.459);
+    /* background-color: rgba(0, 0, 0, 0.307); */
 }
 .video-text {
     color: #FF00AA;
